@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.17.3"
+    "@bahmutov/cy-rollup": "^2.0.0",
+    "cypress": "^12.17.3",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-repeat": "^2.3.3"
   }
 }

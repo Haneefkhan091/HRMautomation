@@ -1,9 +1,16 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  experimentalStudio:true,
+  watchForFileChanges:false,
+  pageLoadTimeout:10000,
+  chromeWebSecurity:false,
+  
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      
     },
+    testIsolation:false,
+    baseUrl:'https://opensource-demo.orangehrmlive.com',
   },
 });
