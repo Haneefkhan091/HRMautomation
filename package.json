@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:runspecifictest": "npx cypress run --spec \"cypress/e2e/HRMAutomation/login.cy.js\"",
+    "test:runspecifictest": "npx cypress run --spec \"cypress/e2e/HRMAutomation/login.cy.js\" --browser chrome",
     "test": "echo \"Error: no test specified\" && exit 1"
      
   },
