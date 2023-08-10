@@ -1,4 +1,4 @@
-name: chrome browser
+name: firefox
 on: push
 jobs:
   cypress-run:
