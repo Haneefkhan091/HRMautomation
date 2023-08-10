@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:runspecifictest": "npx cypress run --spec \"cypress/e2e/HRMAutomation/login.cy.js\" --browser chrome",
+    "test:parallel": "npx cypress run --spec \"cypress/e2e/HRMAutomation/assertiononlogin.cy.js\" --browser chrome",
     "test": "echo \"Error: no test specified\" && exit 1"
      
   },
