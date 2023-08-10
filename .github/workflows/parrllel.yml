@@ -1,25 +1,30 @@
-name: Parrelel testing
+name: Parallel  Test Build
 on: push
 jobs:
-  cypress-run:
+  Add-To-Cart-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
+
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          command: npm run test:runspecifictest
-  Reg-cypress-run:
+         command: npm run test:runspecifictest
+
+  Reg-Flow-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
+
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          command: npm run test:parallel
+         command: npm run test:parallel
